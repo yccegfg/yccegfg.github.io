@@ -115,3 +115,26 @@ optionPrevious.onclick = function () {
     carousel.classList.remove("anim-previous");
   }, 650);
 };
+
+
+const closeButton = document.getElementById("close-modal");
+const modal = document.querySelector(".modal");
+const overLay = document.querySelector(".over-lay");
+
+const Open = () => {
+  modal.classList.add("active");
+  overLay.classList.add("open");
+}
+
+const open = setTimeout(
+  Open, 5000)
+
+closeButton.addEventListener("click", () => {
+  modal.classList.remove("active");
+  overLay.classList.remove("open");
+});
+
+overLay.addEventListener("click", () => {
+  modal.classList.remove("active");
+  overLay.classList.remove("open");
+})

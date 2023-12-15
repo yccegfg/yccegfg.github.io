@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GFG-YCCE</title>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
-    <link rel="stylesheet" href="static/styles.css" />
+    <link rel="stylesheet" href="/static/styles.css" />
 </head>
 
 <body>
@@ -28,12 +29,9 @@
 
     <header>
         <nav>
-            <a href="#home" id="logo"><img src="static/images/logo.png" alt=""></a>
+            <a href="#home" id="logo"><img src="../static/images/logo.png" alt=""></a>
             <i class="fas fa-bars" id="ham-menu"></i>
             <ul id="nav-bar">
-                <!-- <li>
-                    <a href="#home">Home</a>
-                </li> -->
                 <li>
                     <a href="#">About</a>
                 </li>
@@ -43,6 +41,9 @@
                 <li>
                     <a href="#team">Team</a>
                 </li>
+                <!-- <li>
+                    <a href="#">About</a>
+                </li> -->
                 <li>
                     <a href="#footer">Contact</a>
                 </li>
@@ -54,7 +55,7 @@
     <section id="home">
         <div class="home-container">
             <div class="banner">
-                <img src="static/images/Banner.png" alt="">
+                <img src="/static/images/Banner.png" alt="">
             </div>
             <div class="content">
                 <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptatem.</h1><br>
@@ -248,6 +249,71 @@
             </div>
         </div>
     </section>
+
+    <section id="review">
+        <h2>Reviews</h2>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/hd/spiderman-climbing-building-zh11e8xuxvkcycoo.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spiderman-and-avengers-tower-axx229v88braaka0.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spiderman-and-venom-nm5j4m6a07ubapxw.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spiderman-in-battlefield-cia6jqnbwv0w5wiy.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spiderman-and-gherkin-tower-xadp3mg86mjrbpyk.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spiderman-and-iron-man-digital-art-cj0pmkbootwb17d2.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spiderman-in-yellow-jacket-o4fpq9b5772w7x5m.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spider-man-ps4-1080p-gaming-3a9ljlmzc4v5gfgy.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/neon-marvel-spiderman-4k-ps4-jq9sey2onwpn9ope.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/marvel-spiderman-hanging-upside-down-4k-ps4-skvj1xivdrw1xa8l.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/marvel-title-tra5eupbzbkcvoya.webp" height="300"
+                        width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/marvel-studios-kgmbpb4rz33fic4c.webp" height="300"
+                        width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/marvel-avengers-fighting-qihz0ldm58c71jda.webp"
+                        height="300" width="450" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="https://wallpapers.com/images/thumbnail/spider-man-close-up-4k-marvel-iphone-ais1rjkwo97h34ah.webp"
+                        height="300" width="450" alt="" />
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="footer">
         <div class="footer">
             <div class="contact">
@@ -293,7 +359,6 @@
                     </div>
                 </div>
 
-
                 <iframe
                     src="https://docs.google.com/forms/d/e/1FAIpQLScUzAbJdypvzMT4vCqg13l8lglrCWqGJXIr2uXvk-4uIhjD6A/viewform?embedded=true"
                     width="500" height="615" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -305,8 +370,30 @@
 
         </div>
     </section>
+
+
+    <div class="modal">
+        <button id="close-modal">close</button>
+        <div class="comming-events">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUCC8pajeABLQIiPE9MmgovLHrjr6toH8gKw&usqp=CAU"
+                alt="">
+            <div class="event-content">
+                <h1 class="text-glow">Up-comming Event</h1>
+                <h3 class="comming-events-heading">Event heading</h3>
+                <p>Event detail Event detail Event detail Event detail Event detail Event detail Event detail Event
+                    detail Event detail </p>
+                <a href="#">
+                    <button class="ui-btn">
+                        <span> Register </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="over-lay"></div>
     <!-- Script -->
-    <script src="static/script.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 
 </html>
