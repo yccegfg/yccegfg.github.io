@@ -122,19 +122,19 @@ const modal = document.querySelector(".modal");
 const overLay = document.querySelector(".over-lay");
 
 const Open = () => {
-  modal.classList.add("active");
+  modal.classList.add("active-modal");
   overLay.classList.add("open");
 }
 
 const open = setTimeout(
-  Open, 5000)
+  Open, 2000)
 
 closeButton.addEventListener("click", () => {
-  modal.classList.remove("active");
+  modal.classList.remove("active-modal");
   overLay.classList.remove("open");
 });
 
 overLay.addEventListener("click", () => {
-  modal.classList.remove("active");
+  modal.classList.remove("active-modal");
   overLay.classList.remove("open");
 })

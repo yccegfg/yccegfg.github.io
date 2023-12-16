@@ -980,21 +980,21 @@ h2 {
 
 @-webkit-keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(calc(350px *4));
     }
 
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-350px * 5));
     }
 }
 
 @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(calc(350px *4));
     }
 
     100% {
-        transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-350px * 5));
     }
 }
 
@@ -1011,26 +1011,26 @@ h2 {
     align-items: center;
 }
 
-@media(max-width:550px) {
-    .slider .slide img {
-        width: 100%;
-    }
+.slider .slider-card {
+    width: 350px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px gray, 2px 2px 5px gray;
+    height: 100%;
+    background-color: #f8fff9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    cursor: pointer;
 }
 
-.slider::before,
-.slider::after {
-    /* background: linear-gradient(to right, rgb(168, 228, 133) 0%, rgba(255, 255, 255, 0) 100%); */
-    content: "";
-    height: 350px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
+.slider .slider-user {
+    margin-right: auto;
 }
 
-.slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+.slider .checked {
+    color: orange;
 }
 
 .slider::before {
@@ -1043,16 +1043,13 @@ h2 {
     animation: scroll 30s linear infinite;
     display: flex;
     gap: 15px;
-    width: calc(250px * 14);
+    width: calc(350px * 9);
 }
 
-.slider .slide {
-    height: 300px;
-    width: 450px;
-}
 
-.slider img:hover {
-    animation: none;
+.slider:hover .slide-track {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 }
 
 /* <<<<<<<<<<<<<<<<,,footer>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.. */
@@ -1201,7 +1198,7 @@ h2 {
     transition: all 0.3s ease-in-out;
 }
 
-.active {
+.active-modal {
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -1222,7 +1219,7 @@ h2 {
     pointer-events: all;
 }
 
-#close-modal{
+#close-modal {
     padding: 3px;
     font-size: 14px;
     cursor: pointer;
