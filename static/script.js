@@ -118,12 +118,15 @@ optionPrevious.onclick = function () {
 
 
 const closeButton = document.getElementById("close-modal");
+const mobileCloseButton = document.getElementById("mobile-close-modal");
 const modal = document.querySelector(".modal");
+const mobileModal = document.querySelector(".mobile-modal");
 const overLay = document.querySelector(".over-lay");
 
 const Open = () => {
   modal.classList.add("active-modal");
   overLay.classList.add("open");
+  mobileModal.classList.add("mobile-modal-active");
 }
 
 const open = setTimeout(
@@ -134,7 +137,13 @@ closeButton.addEventListener("click", () => {
   overLay.classList.remove("open");
 });
 
+mobileCloseButton.addEventListener("click", () => {
+  mobileModal.classList.remove("mobile-modal-active");
+});
+
 overLay.addEventListener("click", () => {
   modal.classList.remove("active-modal");
   overLay.classList.remove("open");
 })
+
+
